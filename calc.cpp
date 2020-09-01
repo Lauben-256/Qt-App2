@@ -75,15 +75,15 @@ void calc::digit_pressed()
 
     // newLabel = QString::number(labelNumber, 'g', 15);
     ui -> label_2 -> setText(newLabel);
+    ui -> label_2 -> setText(button -> text());
 }
 
 void calc::on_pushButton_dot_released()
 {
-     if(!(ui -> label_2 -> text().contains('.')))
+    if(!(ui -> label_2 -> text().contains('.')))
      {
              ui -> label_2 -> setText(ui -> label_2 -> text() + '.');
      }
-
 }
 
 void calc::unary_operation_pressed()
