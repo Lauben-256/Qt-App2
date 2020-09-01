@@ -79,7 +79,11 @@ void calc::digit_pressed()
 
 void calc::on_pushButton_dot_released()
 {
-    ui -> label_2 -> setText(ui -> label_2 -> text() + '.');
+     if(!(ui -> label_2 -> text().contains('.')))
+     {
+             ui -> label_2 -> setText(ui -> label_2 -> text() + '.');
+     }
+
 }
 
 void calc::unary_operation_pressed()
