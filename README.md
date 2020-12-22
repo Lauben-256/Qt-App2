@@ -12,6 +12,6 @@ a user can visibly see and work with.
 > The user can perform basic mathematical operations with the application. 
 
 ## Technologies used 
-C++
-CSS
+C++ |
+CSS |
 Qt 
